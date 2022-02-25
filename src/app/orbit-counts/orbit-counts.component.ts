@@ -7,7 +7,8 @@ import { Satellite } from '../satellite';
   styleUrls: ['./orbit-counts.component.css']
 })
 export class OrbitCountsComponent implements OnInit {
-	counts: number = 0;
+	countTotal: number = 0;
+
 	@Input() satellites: Satellite[];
     //count: number = this.satellites.length
   constructor() { }
@@ -29,9 +30,8 @@ export class OrbitCountsComponent implements OnInit {
  
 
   satelliteCount() {
-	this.counts = this.satellites.length;
-	return this.counts; 
- }
- 
+	this.countTotal = this.satellites.length;
+	return this.countTotal
+  }
 
 }

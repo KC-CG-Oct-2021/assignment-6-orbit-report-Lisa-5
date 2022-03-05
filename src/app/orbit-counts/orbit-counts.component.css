@@ -9,6 +9,10 @@
 	padding: 8px;
 }
 
+.counts td {
+	padding: 8px;
+}
+
 .counts span {
 	float: right;
 }
